@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Rocket.ico" type="image/x-icon">
+    <title>Meu Currículo</title>
+</head>
+<body>
+    <h1>VINICIUS FRANCO MONTEIRO</h1>
+    <hr>
+    <h2>Idade: 30 anos</h2>
+    <h2>Estado Civil: Solteiro</h2>
+    <h2>Email: viniciusfrmonteiro@gmail.com</h2>
+    <h2>Telefone para Contato: (21)99961-9241</h2>
+    <h2>LinkedIn:<a href="https://www.linkedin.com/in/vinicius-franco-monteiro-1b014068/", target="_blank" rel="external"> Clique AQUI!</a></h2>
+    <h2>Para fazer o download: <a href="livro/meulivro.zip" download="meulivro.zip" type="application/zip">currículo</a></h2>
+    <hr>
+    <h2>Frase Motivacional:</h2>
+    <p>Segundo José de Alencar:</p>
+    <blockquote cite="https://www.ibccoaching.com.br/portal/lideranca-e-motivacao/confira-frases-motivacionais-famosas-inspiradoras/">
+        "O sucesso nasce do querer, da determinação e persistência em se chegar a um objetivo. Mesmo não atingindo o alvo, quem busca e vence obstáculos, no mínimo fará coisas admiráveis"
+    </blockquote>  
+    <hr>
+    <h2><strong>Formações Acadêmicas</strong></h2>
+    <ul type="disc">
+        <li>Formado em <strong>Engenheira Química</strong> <del>formado</del> pela <strong>(<abbr title="Universidade Federal Fluminense">UFF</abbr>)</strong>.</li>
+        <li>Estudante de <mark style="background-color: aqua;">Ciência da Computação</mark> na <em>Universidade Veiga de Almeida</em></li>
+        <li>Tecnólogo em <ins>Redes de Computadores</ins> pela <em>Faculdade Estácio de Sá</em>.</li>
+        <li>Tecnólogo em <strong>Análise e Desenvolvimento de Sistemas</strong> pela <em>Faculdade Estácio de Sá</em></li>
+        <li>Tecnólogo em <mark>Banco de Dados</mark> pela <em>Faculdade Estácio de Sá</em>.</li>
+    </ul>
+    <hr>
+    <h2><strong>Habilidades e Qualificações Profissionais</strong></h2>
+    <ol type="I", start="1">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>PHP</li>
+        <li>React</li>
+        <li>C++</li>
+        <li>C#</li>
+        <li>Android Studio</li>
+        <li>Go</li>
+    </ol>
+    <h3>Amostra que sei Python:</h3>
+    <pre>
+        <code>
+            from random import randint
+            from operator import itemgetter
+            
+            while True:
+                jogadores={'Jogador1': randint(0, 9),
+                           'Jogador2': randint(0, 9),
+                           'Jogador3': randint(0, 9),
+                           'Jogador4': randint(0, 9)
+                           }
+                numero = int(input('Digite um número de 0 a 9:'))
+                jogadores["Jogador5"] = numero
+                print('Os resultados dos jogadores foram:')
+                for k, v in jogadores.items():
+                    print(f'{k} = {v}')
+                ranking = sorted(jogadores.items(), key=itemgetter(1), reverse=True)
+                print('-' * 40)
+                for ind, valor in enumerate(ranking):
+                    print(f'{ind+1}º Lugar: {valor}')
+                print('-' * 40)  
+                opcao = str(input('Deseja Continuar o jogo [S/N]? ')).strip().title()[0]
+                if opcao in 'N' and opcao not in '':
+                    break
+            print('VOLTE SEMPRE!')               
+        </code>
+    </pre>
+    <h2>Para acessar a página 2, clique na imagem abaixo:</h2>
+    <a href="livro/pag002.html" rel="next"><img src="logo-html.png" alt="HTML 5"></a>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 007</title>
+</head>
+<body>
+    <h1>Imagem Flexível</h1>
+    <p>Você está vendo a imagem completa? Experimente ampliar o tamanho da sua janela para aproveitar a melhor experiência &#x1F92F</p>
+    <picture>
+        <source media="(max-width: 650px)" srcset="imagens/natureza-300.jpg" type="image/jpg">
+        <source media="(max-width: 950px)" srcset="imagens/natureza-600.png" type="image/png">
+        <source media="(max-width: 1250px)" srcset="imagens/natureza-900.png" type="image/png">
+        <img src="imagens/natureza-1200.png" alt="Imagem Natureza Flexível">
+    </picture>
+</body>
+</html>

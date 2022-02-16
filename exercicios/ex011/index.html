@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio src="media/till-i-hear-em-say-neffex.mp3" controls autoplay loop></audio>
+    <!-- MP3 WAV OGG-->
+    <!-- Outra forma: -->
+    <audio preload="metadata" autoplay controls loop>
+        <source src="media/busy-city-tracktribe.mp3" type="audio/mpeg">
+        <source src="media/busy-city-tracktribe.ogg" type="audio/ogg">
+        <source src="media/busy-city-tracktribe.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio.<a href="media/busy-city-tracktribe.mp3"> Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+    <!--Assim como os áudios, o ideal é colocar videos em vários formatos, para garantir que o vídeo vai parecer na página.-->
+    <!-- Formatos suportados: MP4, M4V, WEBM e OGV -->
+    <!-- Para gerar outros formatos, entrar no site handbrake.fr-->
+</body>
+</html>
