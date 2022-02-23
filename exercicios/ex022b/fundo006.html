@@ -12,6 +12,11 @@
             background-position: center top;
             background-repeat: repeat-y;
             background-size: cover;
+            /* Dicas de background-size:
+            cover : Você pede ao navegador para que a imagem não tenha nenhum espaço em branco de fundo, isto é, a imagem de fundo tem que ocupar toda a tela, independentemente do tamanho dela (da tela). Aqui no cover a imagem não é distorcida, pois ela é alargada tanto horizontal quanto verticalmente. Porém, o lado negativo disso é que como a imagem estará em uma nova resolução, ela pode apresentar pixelamentos nela, além de ficar com uma aparencia mais turva.
+
+            contain: Você pede ao navegador para ele exibir 100% da imagem de fundo, sem distorcê-la nem ter risco de pixelamento (a imagem fica no tamanho padrão dela), porém, nesse caso, podem ser gerados os "espaços em branco" no background.
+            */
         }
         main {
             background-color: white;
