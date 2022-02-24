@@ -4,7 +4,8 @@
 
 :root {
     --fonte-titulo: 'Passion One', cursive;
-    --fonte-padrao: 'Sriracha', cursive;
+    --fonte-poema: 'Sriracha', cursive;
+    --fonte-padrao: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 * {
@@ -26,13 +27,14 @@ header {
 }
 
 header h1 {
-    font: normal 6em var(--fonte-titulo);
+    font: normal 10vw var(--fonte-titulo);
     padding-top: 50px;
     font-variant: small-caps;
 }
 
 header > p {
     padding-bottom: 50px;
+    font: normal 1em var(--fonte-padrao);
 }
 
 header a, footer a {
@@ -49,8 +51,8 @@ section {
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
-    padding-left: 30px;
-    font: normal 1.5em var(--fonte-padrao);
+    padding-left: 40px;
+    font: normal 3.5vw var(--fonte-poema);
 }
 
 section.normal {
@@ -66,6 +68,7 @@ section.imagem {
 section.imagem > p {
     width: 400px;
     background-color: rgba(0, 0, 0, 0.253);
+    padding: -10px;
 }
 footer {
     background-color: black;
