@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio014</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 98vw;
+            border-collapse: collapse;
+        }
+
+        caption {
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+            border-top: 1px solid black;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        th.titulo {
+            background-color: gray;
+            color: white;
+            padding: 10px;
+            border: 1px solid black;
+            font-size: 1.3em; 
+        }
+
+        th.area {
+            border: 1px solid black;
+            font-size: 1.3em; 
+        }
+
+        th.soma {
+            border: 1px solid black;
+            font-size: 1.3em; 
+            background-color: gray;
+            color: white;
+            text-align: left;
+        }
+
+        td.soma {
+            border: 1px solid black;
+            font-size: 1.3em; 
+            background-color: gray;
+            color: white;
+            text-align: center; 
+        }
+
+        td.materia {
+            text-align: left;
+            border: 1px solid black;
+            font-size: 1.2em; 
+        }
+        td.notas {
+            text-align: center;
+            border: 1px solid black;
+            font-size: 1.2em; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Desafio 14</h1>
+    <table>
+        <thead>
+            <caption>
+                Tabela de Notas
+            </caption>
+            <th rowspan="2" scope="col" class="titulo">Área</th>
+            <th rowspan="2" scope="col" class="titulo">Disciplinas</th>
+            <th colspan="2" scope="colgroup" class="titulo">Notas</th>
+            <th rowspan="2" scope="col" class="titulo">Média</th>
+            <tr>
+                <th scope="col" class="titulo">Nota 1</th>
+                <th scope="col" class="titulo">Nota 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <th rowspan="4" scope="rowgroup" class="area">Exatas</th>
+            <td class="materia">Matemática</td>
+            <td class="notas">0.9</td>
+            <td class="notas">6.3</td>
+            <td class="notas">3.6</td>
+            <tr>
+                <td td class="materia">Física</td>
+                <td class="notas">0.4</td>
+                <td class="notas">7.6</td>
+                <td class="notas">4.0</td>
+            </tr>
+            <tr>
+                <td td class="materia">Química</td>
+                <td class="notas">7.2</td>
+                <td class="notas">9.5</td>
+                <td class="notas">8.4</td>
+            </tr>
+            <tr>
+                <td class="materia">Biologia</td>
+                <td class="notas">9.7</td>
+                <td class="notas">1.8</td>
+                <td class="notas">5.8</td>
+            </tr>
+            <tr>
+                <th colspan="4" scope="row" class="soma">Média de Exatas</th>
+                <td class="soma">5.5</td>
+            </tr>
+            <tr>
+                <th rowspan="2" scope="rowgroup" class="area">Humanas</th>
+                <td class="materia">Historia</td>
+                <td class="notas">8.6</td>
+                <td class="notas">7.4</td>
+                <td class="notas">8.0</td>
+            </tr>
+            <tr>
+                <td class="materia">Geografia</td>
+                <td class="notas">9.7</td>
+                <td class="notas">8.1</td>
+                <td class="notas">8.6</td>
+            </tr>
+            <tr>
+                <th colspan="4" scope="row" class="soma">Média de Humanas</th>
+                <td class="soma">8.3</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
